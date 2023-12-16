@@ -1,7 +1,7 @@
 "use client"
 
 import { cn } from "@/lib/utils"
-import { LayoutDashboard } from "lucide-react"
+import { CodeIcon, ImageIcon, LayoutDashboard, MessageCircle, Music2Icon, Settings2Icon, VideoIcon } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -12,7 +12,49 @@ const routes = [
         href:"/dashboard",
         color:"text-sky-500"
 
-    }
+    },
+    {
+        label:"ChatX-AI",
+        icon:MessageCircle,
+        href:"/chat",
+        color:"text-violet-500"
+
+    },
+    {
+        label:"ImageX-AI",
+        icon:ImageIcon,
+        href:"/image",
+        color:"text-pink-700"
+
+    },
+    {
+        label:"VideoX-AI",
+        icon:VideoIcon,
+        href:"/video",
+        color:"text-orange-700"
+
+    },
+    {
+        label:"MusicX",
+        icon:Music2Icon,
+        href:"/music",
+        color:"text-emerald-500"
+
+    },
+    {
+        label:"CodeX-AI",
+        icon:CodeIcon,
+        href:"/code",
+        color:"text-green-700"
+
+    },
+    {
+        label:"Settings",
+        icon:Settings2Icon,
+        href:"/settings"
+
+    },
+
 ]
 
 const SideBar = () => {
