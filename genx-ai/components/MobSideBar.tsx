@@ -6,8 +6,8 @@ import { Button } from "./ui/button"
 const MobSideBar = () => {
   return (
     <Button variant={'ghost'} size={'icon'} className='md:hidden'>
-            <Menu />
-        </Button>
+        <Menu />
+    </Button>
   )
 }
 
