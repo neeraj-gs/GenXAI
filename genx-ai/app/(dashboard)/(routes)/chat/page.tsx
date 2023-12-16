@@ -1,6 +1,7 @@
 "use client"
 
 import Heading from "@/components/Heading"
+import axios from "axios"
 import { MessageCircle } from "lucide-react"
 import { useForm } from "react-hook-form"
 import * as z from 'zod'
@@ -10,8 +11,14 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { Form, FormControl, FormField, FormItem } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
+import { useRouter } from "next/navigation"
+import { useState } from "react"
+import { ChatCompletionRequestMessage } from "openai"
 
 const ChatXPage = () => {
+
+    const router = useRouter();
+    const [messages,setMessages] = useState<ChatCompletionRequestMessage[]>([])
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver:zodResolver(formSchema),
@@ -27,6 +34,28 @@ const ChatXPage = () => {
 
     const onSubmit = async (values: z.infer<typeof formSchema>) =>{
         console.log(values) //as no api so just use this
+
+        try {
+            const userMsg: ChatCompletionRequestMessage = {
+                role: "user",
+                content: values.prompt, //whtever is teh input
+            }
+            const newMsg = [...messages,userMsg];
+            const res = await axios.post("/api/chat",{
+                messages: newMsg,
+            })
+            setMessages((c)=>[...c,userMsg,res.data]);
+
+            form.reset(); //to clear  the input
+
+            
+        } catch (error:any) {
+            //Open pro model to get hte premium one
+            console.log(error)
+        }finally{
+            //recrash the ruter, server compoentsn are updated 
+            router.refresh();
+        }
     }
 
     
