@@ -1,0 +1,18 @@
+GenX-AI
+    AN AI integrated proejct that generates diffrent types of media such as Audio , Video , Image, Code and Conversational MOdel
+    Also has a Bot for customer Support 
+        A Customer support built using Crisp 
+        Can respond back in real time
+
+
+
+    Tech Stack:
+    Next.Js
+    React
+    Tailwind CSS 
+    Prisma
+    Stripe 
+    Crisp 
+    Clerk 
+    
+
