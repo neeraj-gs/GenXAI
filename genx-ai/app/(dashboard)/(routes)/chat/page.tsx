@@ -16,6 +16,7 @@ import { useState } from "react"
 import { ChatCompletionRequestMessage } from "openai"
 import Empty from "@/components/Empty"
 import Loader from "@/components/Loader"
+import { cn } from "@/lib/utils"
 
 const ChatXPage = () => {
 
@@ -105,7 +106,13 @@ const ChatXPage = () => {
             <div className="flex flex-col-reverse gap-y-4">
                 {messages.map((m)=>{
                     return(
-                        <div key={m.content}>{m.content}</div>
+                        <div 
+                        key={m.content}
+                        className={cn("p-8 w-full flex items-start gap-x-8 rounded-xl",
+                            m.role === "user"? "bg-white border border-black/10":"bg-muted"
+                        )}
+                        >
+                            {m.content}</div>
                     )
                 })}
             </div>
