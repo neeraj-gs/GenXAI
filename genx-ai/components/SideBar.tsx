@@ -49,12 +49,12 @@ const routes = [
         color:"text-green-700"
 
     },
-    {
-        label:"Settings",
-        icon:Settings2Icon,
-        href:"/settings"
+    // {
+    //     label:"Settings",
+    //     icon:Settings2Icon,
+    //     href:"/settings"
 
-    },
+    // },
 
 ]
 
