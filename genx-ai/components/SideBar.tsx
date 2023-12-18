@@ -22,21 +22,21 @@ const routes = [
 
     },
     {
-        label:"ImageX-AI",
+        label:"ImageX-AI [Coming Soon ..]",
         icon:ImageIcon,
         href:"/image",
         color:"text-pink-700"
 
     },
     {
-        label:"VideoX-AI",
+        label:"VideoX-AI [Coming Soon ..]",
         icon:VideoIcon,
         href:"/video",
         color:"text-orange-700"
 
     },
     {
-        label:"MusicX",
+        label:"MusicX [Coming Soon ..]",
         icon:Music2Icon,
         href:"/music",
         color:"text-emerald-500"
