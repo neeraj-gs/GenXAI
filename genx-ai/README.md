@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# GenX-AI
 
-First, run the development server:
+An AI Media Generation Platform , that generates Diffrent kinds of Media such as Image,Code, Music,Video and Chat using AI. Get the best customized generated Media from our AI.
+
+
+### Features
+
+- Image Generation
+- Music Generation
+- Video Generation
+- Code  Generation
+- Chat  Generation
+- Authentication
+
+
+### Tech Stack
+
+- TypeScript
+- NextJs
+- ReactJs
+- MySQL
+- Prisma ORM
+- Tailwind CSS
+- OpenAI API
+- Replicate AI API 
+- Authentication
+
+
+## Screenshots
+
+![GenX-AI](./public/1.png)
+
+![GenX-AI](./public/2.png)
+
+![GenX-AI](./public/3.png)
+
+![GenX-AI](./public/4.png)
+
+
+
+### Run Locally
+
+Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/neeraj-gs/GenXAI.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to the project directory
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  cd genx-ai
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Install dependencies
 
-## Learn More
+```bash
+  npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+Add the envirnment varaibles
+```bash
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+CLERK_SECRET_KEY=
+OPENAI_API_KEY=
+REPLICATE_API_KEY
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Start the server
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+  npm run dev
+```
 
-## Deploy on Vercel
+Project is Installed Locally
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Deployment
+
+The Project is deployed at:
+
+```bash
+  https://genx-ai.vercel.app/
+```
+
