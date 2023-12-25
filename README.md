@@ -29,13 +29,13 @@ An AI Media Generation Platform , that generates Diffrent kinds of Media such as
 
 ## Screenshots
 
-![GenX-AI](./public/1.png)
+![GenX-AI](./genx-ai/public/1.png)
 
-![GenX-AI](./public/2.png)
+![GenX-AI](./genx-ai/public/2.png)
 
-![GenX-AI](./public/3.png)
+![GenX-AI](./genx-ai/public/3.png)
 
-![GenX-AI](./public/4.png)
+![GenX-AI](./genx-ai/public/4.png)
 
 
 
